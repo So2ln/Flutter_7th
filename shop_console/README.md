@@ -8,6 +8,7 @@ It allows users to view products, add items to a cart, check the total price and
 - [1]을 입력하면 미리 정의된 5개의 상품이 출력됩니다.
 - 각 상품은 Product class로 구성되어 있으며, 상품명과 가격 정보를 가집니다.
 
+```
 /*
     예시:
     셔츠 / 45000 원
@@ -16,22 +17,25 @@ It allows users to view products, add items to a cart, check the total price and
     반바지 / 38000 원
     양말 / 5000 원
 */
+```
 
 ### 2. 장바구니에 담기 (Add to cart)
 - [2]를 입력한 뒤 상품명과 수량을 입력하면 해당 상품이 장바구니에 담깁니다.
 - 예외 처리(try-catch)를 통해 잘못된 인풋(문자, 없는 상품, 음수 입력 등) 시 오류를 방지합니다.
 
+```
 /*
     상품명을 입력하세요: 원피스
     수량을 입력하세요: 2
     장바구니에 상품이 담겼어요!
 */
-
+```
 
 ### 3. 장바구니 보기 (View cart)
 - [3]을 누르면 장바구니에 담긴 총 금액과 상세 리스트가 출력됩니다.
 - List<String> totalList와 List<String> totalAmount를 사용하여 상품명과 수량을 각각 저장합니다.
 
+```
 /*
     장바구니에 96000 원 어치를 담으셨네요!
 
@@ -39,6 +43,7 @@ It allows users to view products, add items to a cart, check the total price and
     - 원피스 * 2 개
     - 셔츠 * 1 개
 */
+```
 
 ### 4. 프로그램 종료 (Exit program)
 - [4]를 입력하면 "정말 종료하시겠습니가?"라는 확인 메시지가 나오며, [5]를 눌러야 종료됩니다.
@@ -46,9 +51,11 @@ It allows users to view products, add items to a cart, check the total price and
     - 숫자 이외의 형식이 입력되면 '입력값이 올바르지 않아요!' 메시지가 출력됩니다.
     - 5 이외의 숫자가 입력되면 종료되지 않습니다.
 
+```
 /*
     정말 종료하시겠습니까? 종료하시려면 [5]를 눌러주세요.
 */
+```
 
 ### 5. 장바구니 초기화 (Reset cart)
 - [6]을 입력하면 totalPrice, totalList, totalAmount 모두 초기화되어 장바구니가 비워집니다.
